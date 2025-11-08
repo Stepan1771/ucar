@@ -1,13 +1,10 @@
 ### Описание
-Стек - FastAPI, SQLAlchemy, Pydantic, Alembic, pytest, httpx.
+Стек - FastAPI, SQLAlchemy, Pydantic, Alembic.
 Данный проект соответствует ТЗ.
-Помимо двух ручек которые указаны в ТЗ,
-я создал дополнительные для удобства использования приложения.
-Приложение протестировано, всё работает.
 
 ### Запуск с помощью Docker Compose
 1. Перейдите в пустую папку и клонируйте репозиторий
- - ```git clone https://github.com/Stepan1771/wallet-app-test-task.git```
+ - ```git clone https://github.com/Stepan1771/ucar.git```
 2. Соберите образ
  - ```docker compose build```
 3. Запустите

@@ -2,9 +2,9 @@ services:
   app:
     build:
       dockerfile: Dockerfile
-      context: incidents-app-test-task
+      context: ./
     environment:
-      APP_CONFIG__DB__URL: postgresql+asyncpg://user:password@pg:5433/incidents
+      APP_CONFIG__DB__URL: postgresql+asyncpg://user:password@pg:5432/incidents
       APP_CONFIG__DB__ECHO: 0
     ports:
       - "8000:8000"
@@ -30,7 +30,7 @@ services:
       POSTGRES_PASSWORD: password
       PGDATA: /var/lib/postgresql/data
     ports:
-      - "5433:5432"
+      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
