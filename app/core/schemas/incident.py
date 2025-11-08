@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel, ConfigDict, field_validator
 
 
@@ -51,6 +53,7 @@ class IncidentResponse(IncidentBase):
     id: int
     description: str
     status: str
+    date_time: datetime
     finder: str
 
     model_config = ConfigDict(
